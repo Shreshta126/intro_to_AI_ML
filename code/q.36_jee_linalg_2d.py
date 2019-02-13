@@ -20,7 +20,7 @@ radius_vec=np.matmul(pt_int_a,dvec)
 
 dir_vec_tangent=np.matmul(radius_vec,omat)
 p1=-np.matmul(radius_vec,np.vstack(m))
-print(p1)
+
 print ("direction vector of tangent:",dir_vec_tangent)
 print("equation of tangent vector is:", radius_vec,"X =",p1[0])
 x=np.zeros((2,20))
