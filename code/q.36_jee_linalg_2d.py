@@ -17,7 +17,7 @@ line2_dir=np.matmul(line2,omat)
 pt_int_a=np.vstack((pt_int,a)).T
 dvec=np.array([1,-1])
 radius_vec=np.matmul(pt_int_a,dvec)
-print (radius_vec)
+
 dir_vec_tangent=np.matmul(radius_vec,omat)
 p1=np.matmul(radius_vec,np.vstack(m))
 
