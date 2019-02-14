@@ -15,11 +15,11 @@ line1_dir=np.matmul(line1,omat)
 line2=np.array([1,-1])
 line2_dir=np.matmul(line2,omat)
 pt_int_a=np.vstack((pt_int,a)).T
-dvec=np.array([-1,1])
+dvec=np.array([1,-1])
 radius_vec=np.matmul(pt_int_a,dvec)
-
+print (radius_vec)
 dir_vec_tangent=np.matmul(radius_vec,omat)
-p1=-np.matmul(radius_vec,np.vstack(m))
+p1=np.matmul(radius_vec,np.vstack(m))
 
 print ("direction vector of tangent:",dir_vec_tangent)
 print("equation of tangent vector is:", radius_vec,"X =",p1[0])
